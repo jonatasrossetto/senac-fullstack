@@ -13,6 +13,7 @@ public class teste06 {
 		System.out.println("nA: "+nA);
 		System.out.println("nB: "+nB);
 		System.out.println("nA^2 + nB^2: "+somaQuadrados);
+		System.out.println("A soma dos quadrado é: "+somaQuadrados);
 		
 	} // end of main
 

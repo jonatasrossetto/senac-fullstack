@@ -4,7 +4,7 @@ public class teste04 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		double precoKilo = 9.75;
+		final double precoKilo = 9.75; // declarando uma constante
 		double margemLucro = 20; // em %
 		double precoVenda = 0;
 		double pesoBolo = 2.35; // em Kg
