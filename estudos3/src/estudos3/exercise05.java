@@ -47,8 +47,7 @@ public class exercise05 {
 		for (int i=0;i<5;i++) {
 			System.out.println("valor["+i+"]: "+valor[i]);
 		}
-		
-
+		System.out.println("fim do programa");
 
 	} // end main
 
