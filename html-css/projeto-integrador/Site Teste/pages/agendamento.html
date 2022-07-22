@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/agendamento.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Riscô Tattoo</title>
+</head>
+<body>
+    <header class="header-pages">
+        <nav class="top-nav nav-pages">
+        <a href="../index.html"><h1 class="logo">Riscô Tattoo</h1></a>
+            <ul class="navigation">
+            <li class="nav-item nav-item-pages"><a href="../index.html">Home</a></li>
+            <li class="nav-item nav-item-pages"><a href="./sobre.html">Sobre Nos</a></li>
+            <li class="nav-item nav-item-pages"><a href="./galeria.html">Portfólio</a></li>
+            <li class="nav-item nav-item-pages"><a href="./agendamento.html">Agendamento</a></li>
+          </ul>
+        </nav>
+        <img src="../img/logo.png" alt="Logo do Riscô Tattoo">
+      </header>
+
+      <main class="main-pages">
+        <p>Para pedidos de reserva, por favor preencha o formulário. Retornaremos uma resposta dentro de 2 horas.</p>
+        <form class="project-form" name="project-form">
+        <ul>
+        <li>
+            <label for="nome">Nome e Sobrenome</label>
+            <input type="text" name="name" maxlength="100" placeholder="Seu Nome e sobrenome" id="name" required>
+        </li>
+        <li>
+            <label for="email">Email</label>
+            <input type="email" name="email" maxlength="100" placeholder ="address@email.com" id="email" required>
+        </li>
+        <li>
+            <label for="texto">Descrição da tatuagem</label>
+            <textarea name="project" placeholder="ex. objeto, tamanho, local onde será tatuado..." maxlength="500" id="text" required></textarea>
+        </li>
+        <li>
+            <label for="foto">Referência</label>
+            <input name="pics" type= "text" maxlength="300" placeholder="ex. Dropbox, Pinterest, Instagram..." id="pics" required>
+        </li>
+        <li>
+            <label for="tatuador">Tatuador</label>
+            <input type="radio"  name="pedro" value="pedro">Pedro</input>  
+            <input type="radio"  name="maykon" value="maykon">Maykon</input>  
+            <input type="radio"  name="luis" value="luis">Luis</input> 
+            <input type="radio" name="carlos" value="carlos">Carlos</input>  
+        </li>
+        <li>
+            <label for="agendamento">Dia disponíveis para agendamento:</label>
+            <input type="date" id="data">
+        </li>
+        <li>
+            <button type="submit" class="button-main" value="enviar">Enviar Reserva</button>
+        </li>
+        </ul>
+        </form>
+      
+      </main>
+        <footer class= "footer-pages">
+          <p id="footer-text">All rights reserved. &copy;</p>
+        </footer>
+</body>
+</html>

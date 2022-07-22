@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    /* Irá cobrir toda a página */
+    min-height: 100%;
+}
+
+header {
+    height: 70px;
+    background-color: #0B0F1F;
+}
+
+.top-nav {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.nav-item a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    cursor: pointer;
+    color: #B31545;
+    background-color: white;
+    border-bottom: grey;
+    text-decoration: none;
+}
+
+.intro-title {
+    font-weight: 700;
+    color: #F7941D;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 1px 0px #12A89D;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    color: #F7941D;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 0px #12A89D;
+    font-size: 30px;
+    line-height: 1.4;
+    text-decoration: none;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.logo:hover {
+    color: #B31545;
+    text-decoration: none;
+}
+
+.intro-subtitle {
+    text-shadow: 0;
+    text-decoration: none;
+}
+
+.body-pages {
+    background: white; 
+}
+  
+.header-pages {
+    height: 180px;
+    position: relative;
+    background-size: cover; 
+}
+  
+.header-pages::after {
+    content: "";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+
+.main-pages {
+    padding-top: 50px;
+    text-align: center; 
+}
+  
+@media all and (min-width: 705px) {
+    .top-nav {
+      flex-direction: row;
+      justify-content: space-between; 
+}
+  
+h1 {
+    padding-bottom: 30px; 
+}
+  
+.nav-item {
+    padding: 2px 2px;
+    font-size: 1.2rem;  
+}
+  
+@media all and (min-width: 800px) {
+    .header-pages ::after 
+    background-size: 32%; 
+}
+
+#about_us {
+    width: 100%;
+    margin-top: 100px;
+}
+  
+.about_us_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    height: 90vh;
+}
+  
+.about_us_info h2 {
+    text-align: center;
+    color: #F7941D;
+    font-size: 60px;
+    font-weight: 300;
+}
+  
+.about_us_info p {
+    padding-top: 40px;
+    text-align: justify;
+    color: black;
+    padding-left: 152px;
+    padding-right: 152px;
+}
+  
+.about_us_info img {
+    margin-top: 80px;
+    width: 270px;
+    height: 300px;
+    align-self: center;
+    padding-top: 30px;
+    background-color: #F7941D;
+    border-radius: 5px;
+}
+
+  /* ******************************** COMEÇO DO GRID COM OS CARDS ********************************** */
+.title_profissionais {
+    margin-top: 152px;
+    text-align: center;
+    color: #F7941D;
+    font-size: 60px;
+    font-weight: 300;
+}
+    
+.container {
+    display: grid;
+    grid-gap: 30px;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
+    margin-left: 80px;
+}
+    
+.card_carlos,
+.card_pedro,
+.card_maykon,
+.card_luis {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    color: #B31545;
+    border-radius: 10px;
+    box-shadow: 
+        0 1px 1px rgba(0, 0, 0, 0.1), 
+        0 2px 2px rgba(180, 49, 49, 0.1), 
+        0 4px 4px rgba(190, 49, 49, 0.1), 
+        0 8px 8px rgba(0, 0, 0, 0.1), 
+        0 16px 16px rgba(0, 0, 0, 0.1);
+    height: 500px;
+}
+    
+.card_carlos:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-image: url('../img/profissional3.jpg');
+    background-size: cover;
+    background-position: 0 0; 
+    transition: transform 
+        calc(var(850ms) * 1.5) 
+        var(cubic-bezier(0.19, 1, 0.22, 1));
+}
+    
+.card_luis:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-image: url('../img/profissional5.jpg');
+    background-size: cover;
+    background-position: 0 0; 
+    transition: transform 
+        calc(var(850ms) * 1.5) 
+        var(cubic-bezier(0.19, 1, 0.22, 1));
+}
+    
+.card_pedro:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-image: url('../img/profissional4.jpg');
+    background-size: cover;
+    background-position: 0 0; 
+    transition: transform 
+        calc(var(850ms) * 1.5) 
+        var(cubic-bezier(0.19, 1, 0.22, 1));
+}
+    
+.card_maykon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-image: url('../img/profissional1.jpg');
+    background-size: cover;
+    background-position: 0 0; 
+    transition: transform 
+        calc(var(850ms) * 1.5) 
+        var(cubic-bezier(0.19, 1, 0.22, 1));
+}
+    
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 70px;
+    transition: transform var(850ms) 
+        var(cubic-bezier(0.19, 1, 0.22, 1));
+    z-index: 1;
+}
+    
+.content a{
+    font-size: 20px;
+}
+
+.data {
+    margin-top: 5px;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.35;
+    color: white;
+}
+    
+.link_port {
+    text-decoration: none;
+    padding-top: 10px;
+    font-weight: bold;
+}
+    
+/* ********************************* ANIMAÇÃO EFEITO DEPOIS COM HOVER **************************** */
+.card_luis:after,
+.card_carlos:after,
+.card_pedro:after,
+ .card_maykon:after {
+    transform: translateY(0);
+}
+    
+.content {
+    transform: translateY(calc(100% - 4.5rem));
+}
+    
+.content>*:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(850ms) 
+        var(cubic-bezier(0.19, 1, 0.22, 1)), 
+        opacity var(850ms) 
+        var(cubic-bezier(0.19, 1, 0.22, 1));
+}
+    
+.card_luis:hover,
+.card_pedro:hover,
+.card_carlos:hover,
+.card_maykon:hover,
+.card_luis:focus-within, 
+.card_pedro:focus-within, 
+.card_carlos:focus-within, 
+.card_maykon:focus-within {
+    align-items: center;
+}
+    
+.card_luis:hover:before,
+.card_pedro:hover:before,
+.card_carlos:hover:before,
+.card_maykon:hover:before,
+.card_luis:focus-within:before, 
+.card_pedro:focus-within:before,
+.card_carlos:focus-within:before, 
+.card_maykon:focus-within:before {
+    transform: translateY(-4%);
+}
+    
+.card_luis:hover:after,
+.card_pedro:hover:after,
+.card_carlos:hover:after,
+.card_maykon:hover:after,
+.card_luis:focus-within:after,
+.card_carlos:focus-within:after, 
+.card_pedro:focus-within:after, 
+.card_maykon:focus-within:after {
+  transform: translateY(-50%);
+}
+    
+.card_luis:hover .content,
+.card_pedro:hover .content,
+.card_carlos:hover .content,
+.card_maykon:hover .content,
+.card_luis:focus-within .content,
+.card_pedro:focus-within .content, 
+.card_carlos:focus-within .content, 
+.card_maykon:focus-within .content {
+   transform: translateY(0);
+    background-color: #F7941D;
+    padding-bottom: 10px;
+}
+    
+.card_luis:hover .content>*:not(.title),
+.card_pedro:hover .content>*:not(.title),
+.card_carlos:hover .content>*:not(.title),
+.card_maykon:hover .content>*:not(.title),
+.card_luis:focus-within .content>*:not(.title),
+.card_pedro:focus-within .content>*:not(.title), 
+.card_carlos:focus-within .content>*:not(.title), 
+.card_maykon:focus-within .content>*:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(850ms) / 8);
+}
+  
+.footer-pages {
+    height: 30px;
+    width: 100%; 
+}
+      
+#footer-text {
+    font-size: 0.75em;
+    text-align: center;
+    font-family: "Josefin sans", sans-serif; 
+}

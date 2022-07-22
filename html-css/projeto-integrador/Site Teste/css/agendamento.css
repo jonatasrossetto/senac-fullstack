@@ -1,0 +1,208 @@
+* {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    scroll-behavior: smooth;
+    /* Irá cobrir toda a página */
+    min-height: 100%;
+}
+    
+header {
+    height: 70px;
+    background-color: #0B0F1F;
+}
+    
+.top-nav {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+    
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+    
+.nav-item {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+    
+.nav-item a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+    
+.nav-item a:hover {
+    cursor: pointer;
+    color: #B31545;
+    background-color: white;
+    border-bottom: grey;
+    text-decoration: none;
+}
+    
+.intro-title {
+    font-weight: 700;
+    color: #F7941D;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 1px 0px #12A89D;
+    padding-bottom: 20px;
+}
+    
+a {
+    text-decoration: none;
+}
+    
+.logo {
+    font-weight: bold;
+    color: #F7941D;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 0px #12A89D;
+    font-size: 30px;
+    line-height: 1.4;
+    text-decoration: none;
+    padding-left: 0;
+    padding-top: 10px;
+}
+    
+.logo:hover {
+    color: #B31545;
+    text-decoration: none;
+}
+  
+.footer-pages {
+    height: 30px;
+    width: 100%; 
+}
+  
+#footer-text {
+    font-size: 0.75em;
+    text-align: center;
+    font-family: "Josefin sans", sans-serif; 
+}
+  
+.body-pages {
+    background: white; 
+}
+  
+.header-pages {
+    height: 90px;
+    position: relative;
+    background-size: cover; 
+}
+   
+.main-pages {
+    padding-top: 50px;
+    text-align: center; 
+}
+  
+.galerie {
+    width: 70%;
+    margin: 0 auto; 
+}
+  
+@media all and (min-width: 705px) {
+    .top-nav {
+    flex-direction: row;
+    justify-content: space-between; 
+}
+  
+h1 {
+    padding-bottom: 30px; 
+}
+  
+.nav-item {
+    padding: 2px 2px;
+    font-size: 1.2rem; } 
+}
+
+ @media all and (min-width: 800px) {
+    .header-pages ::after {
+    background-size: 32%; } 
+}
+
+.project-form {
+    min-width: 300px;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    font-family: "Josefin sans", sans-serif; 
+}
+  
+.project-form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+  
+.project-form li {
+    display: block;
+    padding: 9px;
+    border: 1px solid #2931f7;
+    margin-bottom: 30px;
+    border-radius: 3px; 
+}
+  
+.project-form li:last-child {
+    border: none;
+    margin-bottom: 0px;
+    text-align: center; 
+}
+  
+.project-form li > label {
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #000;
+    font-size: 14px;
+    font-family: "Josefin sans", sans-serif; 
+}
+  
+.project-form input[type="text"],
+.project-form input[type="date"],
+.project-form input[type="datetime"],
+.project-form input[type="email"],
+.project-form input[type="number"],
+.project-form input[type="search"],
+.project-form input[type="time"],
+.project-form input[type="url"],
+.project-form input[type="password"],
+.project-form textarea,
+.project-form select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+  
+.project-form input::placeholder,
+  .project-form textarea::placeholder {
+    color: #bbb7b7; 
+}
+  
+ 
+  
